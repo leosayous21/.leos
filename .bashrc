@@ -5,7 +5,6 @@
 # If not running interactively, don't do anything
 #[[ $- != *i* ]] && return
 
-export LANG=en_US.utf8
 
 export EDITOR="vim"
 export TERM="xterm-256color"
@@ -13,7 +12,15 @@ export PAGER="less"
 
 export HISTSIZE=100000
 export HISTCONTROL="ignoredups"
-export PS1='\e[m[\t] \e[0;32m\u@\h:\w $ \e[m'
+export PS1="\[\e[32m\]\u\[\e[m\]:\[\e[36m\]\w\[\e[m\]\\$ "
+#export PS1='\[\e[32m\u\] \[\e[36m\w\] \[\e[33m\]\[\e[1m\]$ \[\e[0m\]'
 
 alias ls='ls -G'
-. ./z.sh
+source ~/z.sh
+
+#nvm
+source ~/.nvm/nvm.sh
+nvm use default
+
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
