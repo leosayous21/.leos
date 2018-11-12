@@ -19,8 +19,13 @@ alias ls='ls -G'
 source ~/z.sh
 
 #nvm
-source ~/.nvm/nvm.sh
-nvm use default
+#source ~/.nvm/nvm.sh
+#nvm use default
 
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
+
+#bash-completion (on mac brew install bash-completion)
+[ -f /usr/local/etc/bash_completion ] && source /usr/local/etc/bash_completion
+#bind '"\t":menu-complete'
+
