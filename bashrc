@@ -28,3 +28,5 @@ export LANGUAGE=en_US.UTF-8
 #bash-completion (on mac brew install bash-completion)
 [ -f /usr/local/etc/bash_completion ] && source /usr/local/etc/bash_completion
 
+#to use  for reverse ^R (reverse-i-search)
+stty -ixon
