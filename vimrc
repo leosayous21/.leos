@@ -46,6 +46,8 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'rking/ag.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'JazzCore/ctrlp-cmatcher'
+Plug 'airblade/vim-gitgutter'
+Plug 'kshenoy/vim-signature'
 call plug#end()
 
 
@@ -163,3 +165,9 @@ nnoremap ,gg :Ag ""<left>
 
 "Grep for usages of the current file
 nnoremap ,gcf :exec "Ag " . expand("%:t:r")<CR>
+
+"GitGutterConfig
+nmap <Leader>p <Plug>GitGutterPreviewHunk
+nmap <Leader>gx <Plug>GitGutterNextHunk
+nmap <Leader>gz <Plug>GitGutterPrevHunk
+nmap <Leader>gu <Plug>GitGutterUndoHunk
