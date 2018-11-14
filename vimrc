@@ -48,6 +48,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'JazzCore/ctrlp-cmatcher'
 Plug 'airblade/vim-gitgutter'
 Plug 'kshenoy/vim-signature'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 
