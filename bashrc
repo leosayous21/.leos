@@ -13,7 +13,13 @@ export PAGER="less"
 export HISTSIZE=100000
 export HISTCONTROL="ignoredups"
 
-case `echo $(hostname) | md5sum | grep -oE '^.'` in
+if which md5 > /dev/null ; then
+  alias md5="md5 -q"
+else
+  alias md5=md5sum
+fi
+
+case `echo $(hostname) | md5 | grep -oE '^.'` in
     "b"|"6")
         HOST_COLOR="31" ;;
     "1"|"8"|"7")
