@@ -39,8 +39,7 @@ esac
 USER_COLOR=0
 [ $(id -u) -eq 0 ] && USER_COLOR=31
 
-PS1='\[\e[0;${USER_COLOR}m\]\u\[\e[m\]@\[\e[0;${HOST_COLOR}m\]\h\[\e[m\]:\[\e[0;34m\]\w\[\e[m\]$ '
-#export PS1='\[\e[32m\u\] \[\e[36m\w\] \[\e[33m\]\[\e[1m\]$ \[\e[0m\]'
+PS1='\[\e[0;${USER_COLOR}m\]\u\[\e[m\]@\[\e[0;${HOST_COLOR}m\]\h\[\e[m\]:\[\e[0;36m\]\w\[\e[m\]$ '
 
 alias ls='ls -G'
 source ~/z.sh
