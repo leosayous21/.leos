@@ -51,6 +51,8 @@ Plug 'JazzCore/ctrlp-cmatcher'
 Plug 'airblade/vim-gitgutter'
 Plug 'kshenoy/vim-signature'
 Plug 'tpope/vim-fugitive'
+" Required autopep8 https://pypi.org/project/autopep8/ - pip install autopep8
+Plug 'tell-k/vim-autopep8'
 call plug#end()
 
 
