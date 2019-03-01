@@ -53,6 +53,7 @@ Plug 'kshenoy/vim-signature'
 Plug 'tpope/vim-fugitive'
 " Required autopep8 https://pypi.org/project/autopep8/ - pip install autopep8
 Plug 'tell-k/vim-autopep8'
+Plug 'w0rp/ale'
 call plug#end()
 
 
