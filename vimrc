@@ -175,7 +175,7 @@ nnoremap ,gg :Ag ""<left>
 nnoremap ,gcf :exec "Ag " . expand("%:t:r")<CR>
 
 "GitGutterConfig
-nmap <Leader>p <Plug>GitGutterPreviewHunk
+nmap <Leader>gp <Plug>GitGutterPreviewHunk
 nmap <Leader>gx <Plug>GitGutterNextHunk
 nmap <Leader>gz <Plug>GitGutterPrevHunk
 nmap <Leader>gu <Plug>GitGutterUndoHunk
