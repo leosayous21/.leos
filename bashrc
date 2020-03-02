@@ -39,14 +39,15 @@ esac
 USER_COLOR=0
 [ $(id -u) -eq 0 ] && USER_COLOR=31
 
-PS1='\[\e[0;${USER_COLOR}m\]\u\[\e[m\]@\[\e[0;${HOST_COLOR}m\]\h\[\e[m\]:\[\e[0;36m\]\w\[\e[m\]$ '
+source .leos/kube-ps1.sh
+PS1='\[\e[0;${USER_COLOR}m\]\u\[\e[m\]@$(kube_ps1):\[\e[0;36m\]\w\[\e[m\]$ '
 
 alias ls='ls -G'
 source ~/z.sh
 
 #nvm
-#source ~/.nvm/nvm.sh
-#nvm use default
+source ~/.nvm/nvm.sh
+nvm use default
 
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
