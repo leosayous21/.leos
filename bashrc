@@ -39,8 +39,11 @@ esac
 USER_COLOR=0
 [ $(id -u) -eq 0 ] && USER_COLOR=31
 
-source .leos/kube-ps1.sh
+#kube config
+source ~/.leos/kube-ps1.sh
 PS1='\[\e[0;${USER_COLOR}m\]\u\[\e[m\]@$(kube_ps1):\[\e[0;36m\]\w\[\e[m\]$ '
+alias k=kubectl
+complete -F __start_kubectl k
 
 alias ls='ls -G'
 source ~/z.sh
