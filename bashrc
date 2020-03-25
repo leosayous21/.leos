@@ -60,3 +60,5 @@ export LANGUAGE=en_US.UTF-8
 
 #to use  for reverse ^R (reverse-i-search)
 stty -ixon
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
