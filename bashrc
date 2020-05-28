@@ -49,8 +49,8 @@ alias ls='ls -G'
 source ~/z.sh
 
 #nvm
-source ~/.nvm/nvm.sh
-nvm use default
+#source ~/.nvm/nvm.sh
+#nvm use default
 
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
@@ -62,3 +62,5 @@ export LANGUAGE=en_US.UTF-8
 stty -ixon
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+complete -C /usr/local/bin/terraform terraform
