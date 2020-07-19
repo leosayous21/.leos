@@ -1,7 +1,6 @@
 set number
 set relativenumber
 syn on
-set paste
 set hlsearch
 set showcmd                     "Show incomplete cmds down the bottom
 set showmode                    "Show current mode down the bottom
@@ -180,3 +179,5 @@ nmap <Leader>gp <Plug>GitGutterPreviewHunk
 nmap <Leader>gx <Plug>GitGutterNextHunk
 nmap <Leader>gz <Plug>GitGutterPrevHunk
 nmap <Leader>gu <Plug>GitGutterUndoHunk
+
+set paste
