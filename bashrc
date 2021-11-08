@@ -12,6 +12,10 @@ export PAGER="less"
 
 export HISTSIZE=100000
 export HISTCONTROL="ignoredups"
+# auto add history and reload from history for each command
+shopt -s histappend
+alias r="history -n; echo reloading history"
+PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
 if which md5 > /dev/null ; then
   alias md5="md5 -q"
