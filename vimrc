@@ -8,6 +8,7 @@ set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
 set et|retab                    "no tabs !
+set backspace=indent,eol,start
 
 
 " This makes vim act like all other editors, buffers can
@@ -52,9 +53,11 @@ Plug 'JazzCore/ctrlp-cmatcher'
 Plug 'airblade/vim-gitgutter'
 Plug 'kshenoy/vim-signature'
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 " Required autopep8 https://pypi.org/project/autopep8/ - pip install autopep8
 Plug 'tell-k/vim-autopep8'
 Plug 'w0rp/ale'
+Plug 'tomlion/vim-solidity'
 call plug#end()
 
 
