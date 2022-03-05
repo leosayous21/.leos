@@ -58,6 +58,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tell-k/vim-autopep8'
 Plug 'w0rp/ale'
 Plug 'tomlion/vim-solidity'
+Plug 'iden3/vim-circom-syntax'
 call plug#end()
 
 
@@ -67,8 +68,8 @@ let g:autopep8_max_line_length=150
 " Open the Ag command and place the cursor into the quotes
 nmap ,ag :Ag ""<Left>
 nmap ,af :AgFile ""<Left>
-nnoremap <silent> <C-x> :cn<CR>
-nnoremap <silent> <C-z> :cp<CR>
+" nnoremap <silent> <C-x> :cn<CR>
+" nnoremap <silent> <C-z> :cp<CR>
 
 
 " ==== NERD tree
